@@ -1,0 +1,17 @@
+@use "../../assets/sass/_variables.scss" as *;
+
+.beers{
+    display: flex;
+    flex-direction: column;
+}
+
+.beer {
+    
+    background-color: silver;
+    border: 1px solid darkgray;
+}
+
+.beer-img{
+    height: 200px;
+    width: auto;
+}

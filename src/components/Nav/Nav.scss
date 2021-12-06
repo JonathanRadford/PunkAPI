@@ -1,0 +1,6 @@
+@use "../../assets/sass/_variables.scss" as *;
+
+.navbar{
+    display: flex;
+    flex-direction: column;
+}
