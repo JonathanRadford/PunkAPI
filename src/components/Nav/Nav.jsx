@@ -1,13 +1,23 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Nav.scss";
+import NavMenu from "../NavMenu/NavMenu";
 
-const Navbar = () => {
-  console.log("Navbar");
+import Button from "../Button/Button";
+
+const Nav = props => {
+  const { handleSubmit } = props;
+  const [showSettings, setShowSettings] = useState(false);
+
+  const toggleSettings = () => {
+    setShowSettings(!showSettings);
+  };
+
   return (
-    <div className="navbar">
-      <h2>Navggjjja</h2>
-    </div>
+    <nav className="navbar">
+      <div className="navbar-box" handleSubmit={handleSubmit} onClick={toggleSettings}><Button isSecondary={true} buttonText={"Search"} className="navbar-box__heading" /></div>
+    {showSettings && <NavMenu toggleSettings={toggleSettings} handleSubmit={handleSubmit}/>}
+    </nav>
   );
 };
 
-export default Navbar;
+export default Nav;

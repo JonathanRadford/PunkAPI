@@ -5,11 +5,11 @@ const Beer = (props) => {
   const {
     name,
     imgURL,
-    description,
+   // description,
     brewDate,
     beerStrength,
-    pairWith,
-    tagline,
+    //pairWith,
+    //tagline,
   } = props;
 
   //<h4 className="beer__pair">Pair With: {pairWith}</h4>
