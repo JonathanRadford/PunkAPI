@@ -1,9 +1,7 @@
 @use "../../assets/sass/_variables.scss" as *;
 
-.navbar{
+.beers{
     display: flex;
-    flex-direction: column;
     flex-wrap: wrap;
-    width:1000px;
-   
+    background-color: $color-secondary;
 }

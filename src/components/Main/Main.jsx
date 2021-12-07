@@ -1,5 +1,5 @@
 import React from "react";
-import BeerList from "../Beers/Beers";
+import BeerList from "../Cardlist/CardList";
 import "./Main.scss"
 import beers from "../../data/beers";
 
