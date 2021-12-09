@@ -2,6 +2,7 @@
 
 .navbar{
     border-right: 10px solid $color-tertiary;
+    background-color: $color-primary;
     &__heading{
         font-size: 1.7rem;
         padding: 5px;

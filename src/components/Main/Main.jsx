@@ -1,12 +1,12 @@
 import React from "react";
 import BeerList from "../Cardlist/CardList";
 import "./Main.scss"
-import beers from "../../data/beers";
 
-const Main = () => {
+const Main = (props) => {
+  const {beerArr} = props;
     return (
-      <div>
-        <BeerList beerArr={beers}/>
+      <div className="main">
+        <BeerList title={"Results"} beerArr={beerArr} />
         </div>
     );
   };

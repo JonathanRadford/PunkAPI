@@ -1,0 +1,22 @@
+@use "../../assets/sass/_variables.scss" as *;
+
+.search-box {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+
+  &__label {
+    font-size: 20px;
+  }
+
+  &__input {
+    margin: 20px ;
+    width: 300px;
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 15px;
+    color: $color-black;
+    margin-bottom: 610px;
+    border: 2px solid $color-tertiary;
+  }
+}

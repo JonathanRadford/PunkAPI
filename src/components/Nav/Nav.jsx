@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import "./Nav.scss";
-import NavMenu from "../NavMenu/NavMenu";
-
 import Button from "../Button/Button";
+import FindBeers from "../../containers/Filterslist/FindBeers";
+import SearchBox from "../SearchBox/SearchBox";
 
-const Nav = props => {
-  const { handleSubmit } = props;
+const Nav = (props) => {
+  const {searchTerm, beerArr, handleInput} = props
   const [showSettings, setShowSettings] = useState(false);
 
   const toggleSettings = () => {
@@ -14,8 +14,9 @@ const Nav = props => {
 
   return (
     <nav className="navbar">
-      <div className="navbar-box" handleSubmit={handleSubmit} onClick={toggleSettings}><Button isSecondary={true} buttonText={"Search"} className="navbar-box__heading" /></div>
-    {showSettings && <NavMenu toggleSettings={toggleSettings} handleSubmit={handleSubmit}/>}
+      <div className="navbar-box" onClick={toggleSettings}><Button isSecondary={true} buttonText={"Search"} className="navbar-box__heading" /></div>
+    {showSettings && <FindBeers beerArr={beerArr} searchTerm={searchTerm} />}
+    {showSettings && <SearchBox name={"beer cards"} searchTerm={searchTerm} handleInput={handleInput} />}
     </nav>
   );
 };

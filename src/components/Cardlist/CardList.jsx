@@ -1,22 +1,11 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import "./CardList.scss";
 import Beer from "../Card/Card";
 
-const BeerList = () => {
-  const [beerArray, setBeerArray] = useState ([]);
+const BeerList = (props) => {
+  const { beerArr } = props;
 
-  useEffect(() => {
-    const URL = `https://api.punkapi.com/v2/beers`;
-    fetch(URL)
-    .then(response => {
-      return response.json();
-    })
-    .then(ipaObject => {
-      setBeerArray(ipaObject);
-    })
-  }, [])
-
-  const beer = beerArray.map((beer) => {
+  const beerList = beerArr.map((beer) => {
     return (
       <Beer
         key={beer.id}
@@ -33,7 +22,7 @@ const BeerList = () => {
   });
   return (
     <div>
-      <div className="beers">{beer}</div>
+      <div className="beers">{beerList}</div>
     </div>
   );
 };

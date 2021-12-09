@@ -5,13 +5,13 @@ const Beer = (props) => {
   const {
     name,
     imgURL,
-   // description,
     brewDate,
     beerStrength,
-    //pairWith,
-    //tagline,
   } = props;
 
+  // description,
+    //pairWith,
+    //tagline,
   //<h4 className="beer__pair">Pair With: {pairWith}</h4>
       //<h4 className="beer__desc">Description: {description}</h4>
       //<h4 className="beer__tag">Tagline: {tagline}</h4>
