@@ -20,7 +20,7 @@ function App() {
       setBeerArray(beerObject);
       console.log(beerObject)
     })
-  }, [URL])
+  }, [newURL])
   
   const handleInput = (event) => {
     const searchInput = event.target.value.toLowerCase();
