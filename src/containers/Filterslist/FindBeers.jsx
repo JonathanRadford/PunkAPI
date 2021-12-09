@@ -1,5 +1,5 @@
 import React from "react";
-import FilteredBeers from "../FilteredItems/FitleredItem";
+import FilteredBeers from "../FilteredItems/FilteredItem";
 
 const FindBeers = props => {
  const {handleSubmitABV, handleSubmitBrewDate} = props;

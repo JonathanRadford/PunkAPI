@@ -3,7 +3,10 @@
 .App {
   display: flex;
   flex-direction: row;
-background-color: $color-secondary;
+  background-color: $color-secondary;
+  font-family: 'Readex Pro', sans-serif;
+  width: 100%;
+  height: 100%;
 }
 
 

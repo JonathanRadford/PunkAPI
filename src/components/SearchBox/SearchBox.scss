@@ -3,19 +3,31 @@
 .search-box {
   display: flex;
   flex-direction: column;
-  width: 400px;
+  width: 200px;
 
-  &__label {
-    font-size: 20px;
-  }
 
   &__input {
     margin: 10px 40px 0 40px ;
-    width: 300px;
+    width: 100px;
     padding: 10px;
-    font-size: 18px;
+    font-size: 25px;
     border-radius: 15px;
     color: $color-black;
     border: 2px solid $color-tertiary;
   }
 }
+
+@media screen and (min-width: 768px){
+  .search-box {
+    width: 400px;
+  
+    &__input {
+      margin: 10px 40px 0 40px ;
+      width: 300px;
+      padding: 10px;
+      font-size: 18px;
+    }
+  }
+}
+
+
