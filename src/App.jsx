@@ -16,9 +16,8 @@ function App() {
     .then(response => {
       return response.json();
     })
-    .then(beerObject => {
-      setBeerArray(beerObject);
-      console.log(beerObject)
+    .then(beer => {
+      setBeerArray(beer);
     })
   }, [newURL])
   
@@ -26,14 +25,30 @@ function App() {
     const searchInput = event.target.value.toLowerCase();
     setSearchTerm(searchInput);
   }
+
+
   
+  const handleSubmitABV = () => {    
+    setNewURL("abv_gt=6");
+};
+  
+
+const handleSubmitBrewDate = () => {    
+  setNewURL("brewed_before=1-2010");
+};
+
+//const handleSubmitABV = () => {    
+ // setNewURL("abv_gt=6");
+//};
+
+
   const filteredBeers = beerArray.filter(beer => {
     const beerNameLowerCase = beer.name.toLowerCase();
     return beerNameLowerCase.includes(searchTerm);
   })
   return (
     <div className="App">
-      <Nav searchTerm={searchTerm} handleInput={handleInput} />
+      <Nav searchTerm={searchTerm} handleInput={handleInput} handleSubmitBrewDate={handleSubmitBrewDate} handleSubmitABV={handleSubmitABV}/>
       <Main beerArr={filteredBeers} />
     </div>
   );

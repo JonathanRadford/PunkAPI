@@ -1,12 +1,14 @@
 import React from "react";
+import FilteredBeers from "../FilteredItems/FitleredItem";
 
 const FindBeers = props => {
- const {searchTerm, handleInput} = props;
+ const {handleSubmitABV, handleSubmitBrewDate} = props;
 
   return (
     <>
-      <input type="checkbox" name="" id=""></input>
-      <h1>sdgdgf</h1>
+    <div  >
+   <FilteredBeers handleSubmitABV={handleSubmitABV} handleSubmitBrewDate={handleSubmitBrewDate} />
+      </div>
       </>
   );
 };
