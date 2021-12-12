@@ -1,7 +1,7 @@
 @use "../../assets/sass/_variables.scss" as *;
 
 .navbar {
-  border-right: 10px solid $color-tertiary;
+  height: 100%;
   background-color: $color-primary;
 
   &-box__heading {
