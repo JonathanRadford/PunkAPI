@@ -1,3 +1,4 @@
+
 Challenge
 Our challenge for this project was to create a an API whereby we would be able to select which beers we wanted based on specific criteria. This included, but wasn't limited to, ABV being higher than 6%, beers that were created prior to 2010, as well as beers with a PH level less than 4.
 
