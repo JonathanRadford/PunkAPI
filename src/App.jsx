@@ -56,6 +56,8 @@ function App() {
     }
   };
 
+
+
   const filteredBeers = beerArray.filter((beer) => {
     const beerNameLowerCase = beer.name.toLowerCase();
     return beerNameLowerCase.includes(searchTerm);
