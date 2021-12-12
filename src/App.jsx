@@ -47,9 +47,9 @@ function App() {
   const handleSubmitPH = (event) => {
     const ph = event.target.checked;
     const findPH = beerArray.filter((beer) => {
-      return beer.ph < 4;
+      return beer.ph > 0 && beer.ph < 4;
     });
-    if (ph === true) {
+    if (ph === true ) {
       setBeerArray(findPH);
     } else {
       setBeerArray(beerObj);
