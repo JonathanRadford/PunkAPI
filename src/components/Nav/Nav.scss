@@ -1,16 +1,15 @@
 @use "../../assets/sass/_variables.scss" as *;
 
-.navbar{
-    border-right: 10px solid $color-tertiary;
-    background-color: $color-primary;
-    
-    &-box__heading{
-        font-size: 1.5rem;
-        text-align: center;
-        border: 4px solid $color-tertiary;
-        box-shadow: 5px 5px  $color-tertiary;
-        border-radius: 20px;
-        margin: 50px;
-    }
-}
+.navbar {
+  border-right: 10px solid $color-tertiary;
+  background-color: $color-primary;
 
+  &-box__heading {
+    font-size: 1.5rem;
+    text-align: center;
+    border: 4px solid $color-tertiary;
+    box-shadow: 5px 5px $color-tertiary;
+    border-radius: 20px;
+    margin: 20px;
+  }
+}

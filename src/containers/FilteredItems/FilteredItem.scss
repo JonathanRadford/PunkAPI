@@ -1,41 +1,39 @@
 @use "../../assets/sass/_variables.scss" as *;
 
-
-.filtered-item{
-    height:65ch;
+.filtered-item {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  margin: 15px;
+  text-align: center;
+  &__input {
     display: flex;
     flex-direction: column;
-    margin: 50px;
-    &__input{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    &-field{
-        margin-right: 5px;
+    align-items: center;
+    &-field {
+      margin-right: 5px;
     }
-    &-text{
-        font-size: 1rem;
+    &-text {
+      font-size: 0.9rem;
     }
-    }
+  }
 }
 
-@media screen and (min-width: 768px){
-   
-.filtered-item{
-    height:65ch;
+@media screen and (min-width: 768px) {
+  .filtered-item {
+    height: 65ch;
     display: flex;
     flex-direction: column;
     margin: 50px;
-    &__input{
-        display: flex;
-        align-items: center;
-    &-field{
+    &__input {
+      display: flex;
+      align-items: center;
+      &-field {
         margin-right: 20px;
-    }
-    &-text{
+      }
+      &-text {
         font-size: 1.2rem;
+      }
     }
-    }
+  }
 }
-}
-

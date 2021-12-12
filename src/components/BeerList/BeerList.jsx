@@ -1,6 +1,6 @@
 import React from "react";
-import "./CardList.scss";
-import Beer from "../Card/Card";
+import "./BeerList.scss";
+import Beer from "../Beer/Beer";
 
 const BeerList = (props) => {
   const { beerArr } = props;
@@ -13,6 +13,7 @@ const BeerList = (props) => {
         name={beer.name}
         brewDate={beer.first_brewed}
         beerStrength={beer.abv}
+        ph={beer.ph}
         //pairWith={beer.food_pairing}
         //description={beer.description}
         //tagline={beer.tagline}
